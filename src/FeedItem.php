@@ -12,7 +12,19 @@ class FeedItem
     protected $id;
 
     /** @var string */
-    protected $link;
+    protected $lead;
+
+    /** @var string */
+    protected $m4a;
+
+    /** @var string */
+    protected $duration;
+
+    /** @var string */
+    protected $keywords;
+
+    /** @var string */
+    protected $enclosure;
 
     /** @var string */
     protected $title;
@@ -48,9 +60,37 @@ class FeedItem
         return $this;
     }
 
-    public function link(string $link)
+    public function lead(string $lead)
     {
-        $this->link = $link;
+        $this->lead = $lead;
+
+        return $this;
+    }
+
+    public function m4a(string $m4a)
+    {
+        $this->m4a = $m4a;
+
+        return $this;
+    }
+
+    public function duration(string $duration)
+    {
+        $this->duration = $duration;
+
+        return $this;
+    }
+
+    public function keywords(string $keywords)
+    {
+        $this->keywords = $keywords;
+
+        return $this;
+    }
+
+    public function enclosure(string $enclosure)
+    {
+        $this->enclosure = $enclosure;
 
         return $this;
     }
