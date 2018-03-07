@@ -18,9 +18,6 @@ class FeedItem
     protected $m4a;
 
     /** @var string */
-    protected $duration;
-
-    /** @var string */
     protected $keywords;
 
     /** @var string */
@@ -73,13 +70,6 @@ class FeedItem
     public function m4a(string $m4a)
     {
         $this->m4a = $m4a;
-
-        return $this;
-    }
-
-    public function duration(string $duration)
-    {
-        $this->duration = $duration;
 
         return $this;
     }
