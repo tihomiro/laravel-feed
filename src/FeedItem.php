@@ -24,7 +24,10 @@ class FeedItem
     protected $keywords;
 
     /** @var string */
-    protected $enclosure;
+    protected $length;
+
+    /** @var string */
+    protected $duration;
 
     /** @var string */
     protected $title;
@@ -88,9 +91,16 @@ class FeedItem
         return $this;
     }
 
-    public function enclosure(string $enclosure)
+    public function length(string $length)
     {
-        $this->enclosure = $enclosure;
+        $this->length = $length;
+
+        return $this;
+    }
+
+    public function duration(string $duration)
+    {
+        $this->duration = $duration;
 
         return $this;
     }
