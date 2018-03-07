@@ -12,6 +12,9 @@ class FeedItem
     protected $id;
 
     /** @var string */
+    protected $link;
+
+    /** @var string */
     protected $title;
 
     /** @var \Carbon\Carbon */
@@ -41,6 +44,13 @@ class FeedItem
     public function id(string $id)
     {
         $this->id = $id;
+
+        return $this;
+    }
+
+    public function link(string $link)
+    {
+        $this->link = $link;
 
         return $this;
     }
